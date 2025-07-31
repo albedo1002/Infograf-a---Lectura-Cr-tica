@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --volver: #d4ffe3;
+    --medio: #3a6987;
+    --claro: #8dfff8;
+    --oscuro: #192e3a;
+    --muy-oscuro: #192e3a;
+}
+body {
+    background-color: #5fafe0;
+}
+header {
+    margin-bottom: 3rem;
+}
+/* Básico general */
+
+/* Cuerpo */
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.fondo_infograf {
+    height: 100vh;
+    width: 800px;
+    background-color: var(--claro);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
+-webkit-box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
+-moz-box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
+}
+.tipogr-principal {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.tipogr-negrita {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.tipogr-cursiva {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.sect_gen {
+    height: 14.1%;
+    width: 98%;
+    border: 1px dotted red;
+}
+
+
+/* -Cuerpo */
+/* Boton de volver */
+.boton_volver {
+    transform: rotate(91deg);
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    top: 90%;
+    left: 92%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 44px 3px var(--volver);
+    -webkit-box-shadow: 0px 0px 44px 3px var(--volver);
+    -moz-box-shadow: 0px 0px 44px 3px var(--volver);
+    z-index: 3;
+  }
+/* -Boton de volver */
+  /* Footer */
+  footer {
+    position: relative;
+    align-items: baseline;
+    background-color: var(--oscuro);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  article {
+    color: white;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+  .sect1, .sect2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sect1 p, .sect2 p {
+    margin: 4px;
+  }
+
+  /* -Footer */
