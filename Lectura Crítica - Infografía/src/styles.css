@@ -20,13 +20,16 @@ header {
 /* Cuerpo */
 main {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: 200vh;
+}
+.div_infografia_principal {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 6rem;
 }
 .fondo_infograf {
     height: 100vh;
-    width: 800px;
+    width: 700px;
     background-color: var(--claro);
     border-radius: 12px;
     display: flex;
@@ -34,6 +37,7 @@ main {
     box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
 -webkit-box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
 -moz-box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
+margin-bottom: 7rem;
 }
 .tipogr-principal {
     font-family: "Lato", sans-serif;
@@ -55,7 +59,72 @@ main {
     width: 98%;
     border: 1px dotted red;
 }
+.imagen_tarjeta {
+  transition: all 300ms;
 
+}
+.imagen_tarjeta:hover {
+  transform: scale(1.2);
+}
+.tarjeta {
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-style: bold;
+  font-size: 15px;
+  width: 42rem;
+  height: 40rem;
+  border: groove 3px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5%;
+  background-color: white;
+  box-shadow: 0px 0px 14px -2px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 14px -2px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 14px -2px rgba(255, 255, 255, 0.75);
+}
+.fondo_titulo {
+  width: 100%;
+  height: fit-content;
+  background: red;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.imagen_reducida {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 5% 5%;
+  background: url(Images/Fondo\ tarjetas.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div_infografia_principal {
+  display: flex;
+  justify-content: center;
+}
+.ajustado_a_contenido {
+  height: fit-content;
+  width: fit-content;
+}
+.div_info_ampliada {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto_ampliado {
+  width: 70%;
+  height: fit-content;
+  color: black;
+  font-size: 1.2rem;
+}
 
 /* -Cuerpo */
 /* Boton de volver */
