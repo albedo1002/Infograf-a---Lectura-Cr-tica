@@ -5,12 +5,12 @@
 :root {
     --volver: #d4ffe3;
     --medio: #3a6987;
-    --claro: #8dfff8;
-    --oscuro: #192e3a;
+    --claro: #ffffff00;
+    --oscuro: #a07e28;
     --muy-oscuro: #192e3a;
 }
 body {
-    background-color: #5fafe0;
+    background-color: #000000;
 }
 header {
     margin-bottom: 3rem;
@@ -20,7 +20,7 @@ header {
 /* Cuerpo */
 main {
     width: 100%;
-    height: 200vh;
+    height: fit-content;
 }
 .div_infografia_principal {
   width: 100%;
@@ -34,10 +34,11 @@ main {
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
--webkit-box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
--moz-box-shadow: 11px 11px 3px -3px rgba(20,15,7,0.75);
+    box-shadow: 11px 11px 3px -3px rgba(77, 76, 75, 1);
+-webkit-box-shadow: 11px 11px 3px -3px rgba(77, 76, 75, 1);
+-moz-box-shadow: 11px 11px 3px -3px rgba(77, 76, 75, 1);
 margin-bottom: 7rem;
+position: relative;
 }
 .tipogr-principal {
     font-family: "Lato", sans-serif;
@@ -51,20 +52,31 @@ margin-bottom: 7rem;
 }
 .tipogr-cursiva {
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: italic;
 }
 .sect_gen {
-    height: 14.1%;
+    height: 25%;
     width: 98%;
-    border: 1px dotted red;
+    display: flex;
+}
+.sect_gen_der {
+  justify-content: end;
 }
 .imagen_tarjeta {
   transition: all 300ms;
-
+  width: 14rem;
+  position: relative;
+  border-radius: 14px;
 }
 .imagen_tarjeta:hover {
   transform: scale(1.2);
+}
+.izq {
+  margin-left: 4rem;
+}
+.der {
+  margin-right: 4rem;
 }
 .tarjeta {
   font-family: 'Arial Narrow', Arial, sans-serif;
@@ -118,6 +130,8 @@ margin-bottom: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 12rem;
+  margin-bottom: 16rem;
 }
 .texto_ampliado {
   width: 70%;
@@ -125,7 +139,25 @@ margin-bottom: 7rem;
   color: black;
   font-size: 1.2rem;
 }
-
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.decoracion_info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(Images/Fondo\ de\ tarjeta\ grande.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  border-radius: 15px;
+}
+.contiene_info_ampliada {
+  width: 100%;
+  height: fit-content;
+}
 /* -Cuerpo */
 /* Boton de volver */
 .boton_volver {
